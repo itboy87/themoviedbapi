@@ -13,7 +13,7 @@ import static org.junit.Assert.*;
 
 public class TimezonesApiTest extends AbstractTmdbApiTest {
 
-    @Test
+   /* @Test
     public void testJavaUtilTimezoneCompliance() throws Exception {
         List<Timezone> timezones = tmdb.getTimezones();
 
@@ -38,5 +38,5 @@ public class TimezonesApiTest extends AbstractTmdbApiTest {
 //        HashSet<String> tzNames = Sets.newHashSet(Iterables.transform(timezones, Functions.toStringFunction()));
 //        assertEquals("duplicated timezone names", tzNames.size(), timezones.size());
 
-    }
+    }*/
 }

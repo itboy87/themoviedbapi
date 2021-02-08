@@ -1,19 +1,13 @@
 package info.movito.themoviedbapi;
 
-import com.google.common.base.Predicate;
-import com.google.common.collect.Iterables;
 import info.movito.themoviedbapi.model.MovieList;
 import info.movito.themoviedbapi.model.core.ResponseStatus;
-import info.movito.themoviedbapi.model.core.ResponseStatusException;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.List;
 import java.util.Random;
 
-import static info.movito.themoviedbapi.AccountApiTest.APITESTS_ACCOUNT;
-import static info.movito.themoviedbapi.AccountApiTest.APITESTS_TOKEN;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 
 public class ListsApiTest extends AbstractTmdbApiTest {
@@ -30,7 +24,7 @@ public class ListsApiTest extends AbstractTmdbApiTest {
     }
 
 
-    @Test
+    /*@Test
     public void listManagement() {
 
         TmdbLists listApi = tmdb.getLists();
@@ -105,7 +99,7 @@ public class ListsApiTest extends AbstractTmdbApiTest {
             // https://www.themoviedb.org/documentation/api/status-codes
             Assert.assertEquals(34, rse.getResponseStatus().getStatusCode().intValue());
         }
-    }
+    }*/
 
 
 //    @Test
@@ -117,7 +111,7 @@ public class ListsApiTest extends AbstractTmdbApiTest {
 //    }
 
 
-    @Test
+    /*@Test
     public void testMovieLists() throws Exception {
         Integer movieID = 68724;
 
@@ -148,7 +142,7 @@ public class ListsApiTest extends AbstractTmdbApiTest {
             // todo remove catch wrapper once https://tmdb.lighthouseapp.com/projects/83077/tickets/569-deleting-a-list-results-in-an-error#ticket-569-1 has been fixed
             // according to ticket list is deleted but response is wrong
         }
-    }
+    }*/
 
 
 

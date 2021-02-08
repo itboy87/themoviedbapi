@@ -46,7 +46,8 @@ public class AbstractTmdbApiTest {
 
     @BeforeClass
     public static void setUpClass() throws Exception {
-        apiKey = System.getenv("apikey");
+//        apiKey = System.getenv("apikey");
+        apiKey = "0fa6c6b5cc9fa12b33e8c210a46c5dc4";
 
         if (StringUtils.isBlank(apiKey)) {
             String g = "Missing api key: To run test you need to provide the key as environment variable named 'apikey' " +

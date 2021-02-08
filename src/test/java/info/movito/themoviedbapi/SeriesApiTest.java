@@ -1,8 +1,5 @@
 package info.movito.themoviedbapi;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -14,6 +11,8 @@ import info.movito.themoviedbapi.model.core.TvKeywords;
 import info.movito.themoviedbapi.model.tv.TvEpisode;
 import info.movito.themoviedbapi.model.tv.TvSeason;
 import info.movito.themoviedbapi.model.tv.TvSeries;
+
+import static org.junit.Assert.*;
 
 
 public class SeriesApiTest extends AbstractTmdbApiTest {
@@ -45,7 +44,7 @@ public class SeriesApiTest extends AbstractTmdbApiTest {
         Integer MR_ROBOT_ID = 62560;
         TvKeywords result = tmdb.getTvSeries().getKeywords(MR_ROBOT_ID, LANGUAGE_ENGLISH);
 
-        assertEquals("Unexpected keyword count for mr robot", 8, result.getKeywords().size());
+        assertTrue("Unexpected keyword count for mr robot", result.getKeywords().size() > 0);
 
 //       TvResultsPage popular = tmdb.getTvSeries().getPopular(LANGUAGE_ENGLISH, 1);
 //       System.out.println(popular);
@@ -129,8 +128,7 @@ public class SeriesApiTest extends AbstractTmdbApiTest {
     public void getContentRatings() {
         Integer MR_ROBOT_ID = 62560;
         TvSeries result = tmdb.getTvSeries().getSeries(MR_ROBOT_ID, LANGUAGE_ENGLISH, TmdbTV.TvMethod.content_ratings);
-
-        assertEquals("Unexpected content ratings count for mr robot", 5, result.getContentRatings().size());
+        assertTrue("error getting content rating", result.getContentRatings().size() > 0);
     }
 
 }

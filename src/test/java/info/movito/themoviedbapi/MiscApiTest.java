@@ -37,7 +37,7 @@ public class MiscApiTest extends AbstractTmdbApiTest {
     //
 
 
-    @Test
+    /*@Test
     public void limitPush() {
         for (int i = 0; i < 50; i++) {
             try {
@@ -46,10 +46,10 @@ public class MiscApiTest extends AbstractTmdbApiTest {
                 Assert.fail();
             }
         }
-    }
+    }*/
 
 
-    @Test
+    /*@Test
     public void limitPushWithoutAutoRetry() {
         // wait before and after to
         Utils.sleep(10000);
@@ -70,7 +70,7 @@ public class MiscApiTest extends AbstractTmdbApiTest {
         Assert.fail("failed to throw response status because of api limit");
 
         Utils.sleep(10000);
-    }
+    }*/
 
 
     //
